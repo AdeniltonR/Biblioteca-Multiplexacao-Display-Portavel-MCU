@@ -112,36 +112,36 @@ Este é o diagrama do projeto eletrônico, onde estarão contidos todos os circu
 
 ### Firmware PIC
 
-Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://www.notion.so/Readme-firmware-Arduino-730889d213424026a7599c931b5c57ee?pvs=21) a seguir.
+Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://github.com/AdeniltonR/Biblioteca-Multiplexacao-Display-Portavel-MCU/tree/main/Projetos/MCU-PIC) a seguir.
 
 `[Adicionar uma foto ou Gif]`
 
 ### Firmware 8051
 
-Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://www.notion.so/Readme-firmware-Arduino-730889d213424026a7599c931b5c57ee?pvs=21) a seguir.
+Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://github.com/AdeniltonR/Biblioteca-Multiplexacao-Display-Portavel-MCU/tree/main/Projetos/MCU-8051) a seguir.
 
 `[Adicionar uma foto ou Gif]`
 
 ### Firmware STM8
 
-Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://www.notion.so/Readme-firmware-Arduino-730889d213424026a7599c931b5c57ee?pvs=21) a seguir.
+Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://github.com/AdeniltonR/Biblioteca-Multiplexacao-Display-Portavel-MCU/tree/main/Projetos/MCU-STM8) a seguir.
 
 `[Adicionar uma foto ou Gif]`
 
 ### Firmware STM32
 
-Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://www.notion.so/Readme-firmware-Arduino-730889d213424026a7599c931b5c57ee?pvs=21) a seguir.
+Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://github.com/AdeniltonR/Biblioteca-Multiplexacao-Display-Portavel-MCU/tree/main/Projetos/MCU-STM32) a seguir.
 
 `[Adicionar uma foto ou Gif]`
 
 ### Firmware ESP32
 
-Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://www.notion.so/Readme-firmware-Arduino-730889d213424026a7599c931b5c57ee?pvs=21) a seguir.
+Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://github.com/AdeniltonR/Biblioteca-Multiplexacao-Display-Portavel-MCU/tree/main/Projetos/MCU-ESP32) a seguir.
 
 `[Adicionar uma foto ou Gif]`
 
 ### Firmware AVR
 
-Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://www.notion.so/Readme-firmware-Arduino-730889d213424026a7599c931b5c57ee?pvs=21) a seguir.
+Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://github.com/AdeniltonR/Biblioteca-Multiplexacao-Display-Portavel-MCU/tree/main/Projetos/MCU-AVR) a seguir.
 
 `[Adicionar uma foto ou Gif]`
