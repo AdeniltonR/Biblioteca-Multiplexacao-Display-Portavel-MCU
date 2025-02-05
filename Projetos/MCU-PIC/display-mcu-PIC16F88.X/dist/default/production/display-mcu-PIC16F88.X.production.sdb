@@ -1,0 +1,230 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F88 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"39 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\display7.c
+[v _display_inicializar display_inicializar `(v  1 e 1 0 ]
+"56
+[v _display_limpar display_limpar `(v  1 e 1 0 ]
+"70
+[v _display_exibir_numero display_exibir_numero `(v  1 e 1 0 ]
+"103
+[v _display_exibir_digito display_exibir_digito `(v  1 e 1 0 ]
+"136
+[v _display_exibir_decimal display_exibir_decimal `(v  1 e 1 0 ]
+"41 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"166 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"1087
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1149
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"20 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\display7.c
+[v _segmentos segmentos `[10]uc  1 e 10 0 ]
+"41 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"46
+[v main@i i `uc  1 a 1 75 ]
+"61
+} 0
+"39 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\display7.c
+[v _display_inicializar display_inicializar `(v  1 e 1 0 ]
+{
+"48
+} 0
+"70
+[v _display_exibir_numero display_exibir_numero `(v  1 e 1 0 ]
+{
+"81
+[v display_exibir_numero@i i `uc  1 a 1 7 ]
+"78
+[v display_exibir_numero@unidades unidades `uc  1 a 1 6 ]
+"77
+[v display_exibir_numero@dezenas dezenas `uc  1 a 1 5 ]
+"76
+[v display_exibir_numero@centenas centenas `uc  1 a 1 4 ]
+"70
+[v display_exibir_numero@numero numero `i  1 p 2 0 ]
+"94
+} 0
+"136
+[v _display_exibir_decimal display_exibir_decimal `(v  1 e 1 0 ]
+{
+"152
+[v display_exibir_decimal@i i `uc  1 a 1 9 ]
+"142
+[v display_exibir_decimal@parte_inteira parte_inteira `uc  1 a 1 10 ]
+"148
+[v display_exibir_decimal@primeira_decimal primeira_decimal `uc  1 a 1 8 ]
+"146
+[v display_exibir_decimal@unidades unidades `uc  1 a 1 7 ]
+"143
+[v display_exibir_decimal@casas_decimais casas_decimais `uc  1 a 1 6 ]
+"149
+[v display_exibir_decimal@segunda_decimal segunda_decimal `uc  1 a 1 5 ]
+"145
+[v display_exibir_decimal@dezenas dezenas `uc  1 a 1 4 ]
+"136
+[v display_exibir_decimal@numero numero `f  1 p 4 64 ]
+"185
+} 0
+"56
+[v _display_limpar display_limpar `(v  1 e 1 0 ]
+{
+"62
+} 0
+"103
+[v _display_exibir_digito display_exibir_digito `(v  1 e 1 0 ]
+{
+[v display_exibir_digito@digito digito `uc  1 p 1 wreg ]
+[v display_exibir_digito@digito digito `uc  1 p 1 wreg ]
+[v display_exibir_digito@posicao posicao `uc  1 p 1 0 ]
+"105
+[v display_exibir_digito@digito digito `uc  1 p 1 1 ]
+"128
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 63 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 62 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 54 ]
+"70
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 20 ]
+[v ___flsub@b b `d  1 p 4 24 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 19 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 18 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 17 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 16 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S382 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S387 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S390 . 4 `l 1 i 4 0 `d 1 f 4 0 `S382 1 fAsBytes 4 0 `S387 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S390  1 a 4 48 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 42 ]
+[s S459 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S462 . 2 `s 1 i 2 0 `us 1 n 2 0 `S459 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S462  1 a 2 52 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 47 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 46 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 41 ]
+"8
+[v ___flmul@b b `d  1 p 4 28 ]
+[v ___flmul@a a `d  1 p 4 32 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `us  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 8 ]
+"60
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 13 ]
+[v ___awmod@counter counter `uc  1 a 1 12 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 8 ]
+[v ___awmod@dividend dividend `i  1 p 2 10 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0

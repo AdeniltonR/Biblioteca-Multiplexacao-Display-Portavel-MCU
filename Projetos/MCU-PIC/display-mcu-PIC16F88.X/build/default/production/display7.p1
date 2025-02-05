@@ -1,0 +1,490 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"1149 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1149: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1087
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1087: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"68 ./display7.h
+[; ;./display7.h: 68: void display_limpar(void);
+[v _display_limpar `(v ~T0 @X0 0 ef ]
+"228 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 228: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"166
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"70 ./display7.h
+[; ;./display7.h: 70: void display_exibir_digito(uint8_t digito, uint8_t posicao);
+[v _display_exibir_digito `(v ~T0 @X0 0 ef2`uc`uc ]
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"20 C:\Program Files\Microchip\xc8\v2.50\pic\include\builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+"54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"230
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 230: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"292
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 292: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"312
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 312: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"390
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 390: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"446
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 446: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"480
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 480: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"487
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 487: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"494
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 494: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"501
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 501: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"573
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 573: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"580
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 580: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"651
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 651: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"658
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 658: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"728
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 728: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"735
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 735: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"742
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 742: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"749
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 749: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"807
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 807: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"902
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 902: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"909
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 909: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"916
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 916: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"923
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 923: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1019
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1019: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1089
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1089: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1151
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1151: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1213
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1213: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1269
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1269: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1303
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1303: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1337
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1337: __asm("OSCCON equ 08Fh");
+[; <" OSCCON equ 08Fh ;# ">
+"1408
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1408: __asm("OSCTUNE equ 090h");
+[; <" OSCTUNE equ 090h ;# ">
+"1466
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1466: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1473
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1473: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1480
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1480: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"1649
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1649: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"1730
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1730: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"1737
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1737: __asm("ANSEL equ 09Bh");
+[; <" ANSEL equ 09Bh ;# ">
+"1793
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1793: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"1863
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1863: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"1928
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1928: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"1935
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1935: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"1983
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 1983: __asm("WDTCON equ 0105h");
+[; <" WDTCON equ 0105h ;# ">
+"2041
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 2041: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2048
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 2048: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2055
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 2055: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2062
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 2062: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2069
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 2069: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2120
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h: 2120: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"20 display7.c
+[; ;display7.c: 20: uint8_t segmentos[10] = {
+[v _segmentos `uc ~T0 @X0 -> 10 `i e ]
+[i _segmentos
+:U ..
+-> -> 63 `i `uc
+-> -> 6 `i `uc
+-> -> 91 `i `uc
+-> -> 79 `i `uc
+-> -> 102 `i `uc
+-> -> 109 `i `uc
+-> -> 125 `i `uc
+-> -> 7 `i `uc
+-> -> 127 `i `uc
+-> -> 111 `i `uc
+..
+]
+"39
+[; ;display7.c: 39: void display_inicializar(void) {
+[v _display_inicializar `(v ~T0 @X0 1 ef ]
+{
+[e :U _display_inicializar ]
+[f ]
+"41
+[; ;display7.c: 41:     TRISB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6) | (1<<7));
+[e =& _TRISB -> ~ | | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i << -> 1 `i -> 7 `i `Vuc ]
+"44
+[; ;display7.c: 44:     TRISA &= ~((1<<0) | (1<<1) | (1<<2));
+[e =& _TRISA -> ~ | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `Vuc ]
+"47
+[; ;display7.c: 47:     display_limpar();
+[e ( _display_limpar ..  ]
+"48
+[; ;display7.c: 48: }
+[e :UE 92 ]
+}
+"56
+[; ;display7.c: 56: void display_limpar(void) {
+[v _display_limpar `(v ~T0 @X0 1 ef ]
+{
+[e :U _display_limpar ]
+[f ]
+"58
+[; ;display7.c: 58:     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6) | (1<<7));
+[e =& _PORTB -> ~ | | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i << -> 1 `i -> 7 `i `Vuc ]
+"61
+[; ;display7.c: 61:     PORTA &= ~((1<<0) | (1<<1) | (1<<2));
+[e =& _PORTA -> ~ | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `Vuc ]
+"62
+[; ;display7.c: 62: }
+[e :UE 93 ]
+}
+"70
+[; ;display7.c: 70: void display_exibir_numero(int numero) {
+[v _display_exibir_numero `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _display_exibir_numero ]
+[v _numero `i ~T0 @X0 1 r1 ]
+[f ]
+"73
+[; ;display7.c: 73:     if(numero < 0 || numero > 999) return;
+[e $ ! || < _numero -> 0 `i > _numero -> 999 `i 95  ]
+[e $UE 94  ]
+[e :U 95 ]
+"76
+[; ;display7.c: 76:     uint8_t centenas = (numero / 100) % 10;
+[v _centenas `uc ~T0 @X0 1 a ]
+[e = _centenas -> % / _numero -> 100 `i -> 10 `i `uc ]
+"77
+[; ;display7.c: 77:     uint8_t dezenas = (numero / 10) % 10;
+[v _dezenas `uc ~T0 @X0 1 a ]
+[e = _dezenas -> % / _numero -> 10 `i -> 10 `i `uc ]
+"78
+[; ;display7.c: 78:     uint8_t unidades = (numero / 1) % 10;
+[v _unidades `uc ~T0 @X0 1 a ]
+[e = _unidades -> % / _numero -> 1 `i -> 10 `i `uc ]
+"81
+[; ;display7.c: 81:     for (uint8_t i = 0; i < 50; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 50 `i 96  ]
+[e $U 97  ]
+[e :U 96 ]
+{
+"83
+[; ;display7.c: 83:         display_exibir_digito(centenas, 1);
+[e ( _display_exibir_digito (2 , _centenas -> -> 1 `i `uc ]
+"84
+[; ;display7.c: 84:         _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"87
+[; ;display7.c: 87:         display_exibir_digito(dezenas, 2);
+[e ( _display_exibir_digito (2 , _dezenas -> -> 2 `i `uc ]
+"88
+[; ;display7.c: 88:         _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"91
+[; ;display7.c: 91:         display_exibir_digito(unidades, 3);
+[e ( _display_exibir_digito (2 , _unidades -> -> 3 `i `uc ]
+"92
+[; ;display7.c: 92:         _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"93
+[; ;display7.c: 93:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 50 `i 96  ]
+[e :U 97 ]
+}
+"94
+[; ;display7.c: 94: }
+[e :UE 94 ]
+}
+"103
+[; ;display7.c: 103: void display_exibir_digito(uint8_t digito, uint8_t posicao) {
+[v _display_exibir_digito `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _display_exibir_digito ]
+[v _digito `uc ~T0 @X0 1 r1 ]
+[v _posicao `uc ~T0 @X0 1 r2 ]
+[f ]
+"105
+[; ;display7.c: 105:     if(digito > 9 || posicao < 1 || posicao > 3) return;
+[e $ ! || || > -> _digito `i -> 9 `i < -> _posicao `i -> 1 `i > -> _posicao `i -> 3 `i 100  ]
+[e $UE 99  ]
+[e :U 100 ]
+"108
+[; ;display7.c: 108:     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6));
+[e =& _PORTB -> ~ | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `Vuc ]
+"111
+[; ;display7.c: 111:     switch (posicao) {
+[e $U 102  ]
+{
+"112
+[; ;display7.c: 112:         case 1:
+[e :U 103 ]
+"113
+[; ;display7.c: 113:             PORTA |= ((1<<0));
+[e =| _PORTA -> << -> 1 `i -> 0 `i `Vuc ]
+"114
+[; ;display7.c: 114:             PORTA &= ~((1<<1) | (1<<2));
+[e =& _PORTA -> ~ | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `Vuc ]
+"115
+[; ;display7.c: 115:             break;
+[e $U 101  ]
+"116
+[; ;display7.c: 116:         case 2:
+[e :U 104 ]
+"117
+[; ;display7.c: 117:             PORTA |= ((1<<1));
+[e =| _PORTA -> << -> 1 `i -> 1 `i `Vuc ]
+"118
+[; ;display7.c: 118:             PORTA &= ~((1<<0) | (1<<2));
+[e =& _PORTA -> ~ | << -> 1 `i -> 0 `i << -> 1 `i -> 2 `i `Vuc ]
+"119
+[; ;display7.c: 119:             break;
+[e $U 101  ]
+"120
+[; ;display7.c: 120:         case 3:
+[e :U 105 ]
+"121
+[; ;display7.c: 121:             PORTA |= ((1<<2));
+[e =| _PORTA -> << -> 1 `i -> 2 `i `Vuc ]
+"122
+[; ;display7.c: 122:             PORTA &= ~((1<<0) | (1<<1));
+[e =& _PORTA -> ~ | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i `Vuc ]
+"123
+[; ;display7.c: 123:             break;
+[e $U 101  ]
+"124
+[; ;display7.c: 124:     }
+}
+[e $U 101  ]
+[e :U 102 ]
+[e [\ _posicao , $ -> 1 `i 103
+ , $ -> 2 `i 104
+ , $ -> 3 `i 105
+ 101 ]
+[e :U 101 ]
+"127
+[; ;display7.c: 127:     PORTB |= segmentos[digito];
+[e =| _PORTB -> *U + &U _segmentos * -> _digito `ux -> -> # *U &U _segmentos `ui `ux `Vuc ]
+"128
+[; ;display7.c: 128: }
+[e :UE 99 ]
+}
+"136
+[; ;display7.c: 136: void display_exibir_decimal(float numero) {
+[v _display_exibir_decimal `(v ~T0 @X0 1 ef1`f ]
+{
+[e :U _display_exibir_decimal ]
+[v _numero `f ~T0 @X0 1 r1 ]
+[f ]
+"138
+[; ;display7.c: 138:     if (numero < 0.0 || numero >= 100.0) return;
+[e $ ! || < -> _numero `d .0.0 >= -> _numero `d .100.0 107  ]
+[e $UE 106  ]
+[e :U 107 ]
+"142
+[; ;display7.c: 142:     uint8_t parte_inteira = (uint8_t)numero;
+[v _parte_inteira `uc ~T0 @X0 1 a ]
+[e = _parte_inteira -> _numero `uc ]
+"143
+[; ;display7.c: 143:     uint8_t casas_decimais = (uint8_t)((numero - parte_inteira) * 100 + 0.5);
+[v _casas_decimais `uc ~T0 @X0 1 a ]
+[e = _casas_decimais -> + -> * - _numero -> -> _parte_inteira `i `f -> -> 100 `i `f `d .0.5 `uc ]
+"145
+[; ;display7.c: 145:     uint8_t dezenas = (parte_inteira / 10) % 10;
+[v _dezenas `uc ~T0 @X0 1 a ]
+[e = _dezenas -> % / -> _parte_inteira `i -> 10 `i -> 10 `i `uc ]
+"146
+[; ;display7.c: 146:     uint8_t unidades = (parte_inteira % 10);
+[v _unidades `uc ~T0 @X0 1 a ]
+[e = _unidades -> % -> _parte_inteira `i -> 10 `i `uc ]
+"148
+[; ;display7.c: 148:     uint8_t primeira_decimal = casas_decimais / 10;
+[v _primeira_decimal `uc ~T0 @X0 1 a ]
+[e = _primeira_decimal -> / -> _casas_decimais `i -> 10 `i `uc ]
+"149
+[; ;display7.c: 149:     uint8_t segunda_decimal = casas_decimais % 10;
+[v _segunda_decimal `uc ~T0 @X0 1 a ]
+[e = _segunda_decimal -> % -> _casas_decimais `i -> 10 `i `uc ]
+"152
+[; ;display7.c: 152:     for (uint8_t i = 0; i < 50; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 50 `i 108  ]
+[e $U 109  ]
+[e :U 108 ]
+{
+"154
+[; ;display7.c: 154:         if (parte_inteira >= 10) {
+[e $ ! >= -> _parte_inteira `i -> 10 `i 111  ]
+{
+"156
+[; ;display7.c: 156:             display_exibir_digito(dezenas, 1);
+[e ( _display_exibir_digito (2 , _dezenas -> -> 1 `i `uc ]
+"157
+[; ;display7.c: 157:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"159
+[; ;display7.c: 159:             display_exibir_digito(unidades, 2);
+[e ( _display_exibir_digito (2 , _unidades -> -> 2 `i `uc ]
+"160
+[; ;display7.c: 160:             PORTB |= (1<<7);
+[e =| _PORTB -> << -> 1 `i -> 7 `i `Vuc ]
+"161
+[; ;display7.c: 161:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"163
+[; ;display7.c: 163:             PORTB &= ~(1<<7);
+[e =& _PORTB -> ~ << -> 1 `i -> 7 `i `Vuc ]
+"165
+[; ;display7.c: 165:             display_exibir_digito(primeira_decimal, 3);
+[e ( _display_exibir_digito (2 , _primeira_decimal -> -> 3 `i `uc ]
+"166
+[; ;display7.c: 166:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"168
+[; ;display7.c: 168:         } else {
+}
+[e $U 112  ]
+[e :U 111 ]
+{
+"169
+[; ;display7.c: 169:             display_exibir_digito(unidades, 1);
+[e ( _display_exibir_digito (2 , _unidades -> -> 1 `i `uc ]
+"170
+[; ;display7.c: 170:             PORTB |= (1<<7);
+[e =| _PORTB -> << -> 1 `i -> 7 `i `Vuc ]
+"171
+[; ;display7.c: 171:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"173
+[; ;display7.c: 173:             PORTB &= ~(1<<7);
+[e =& _PORTB -> ~ << -> 1 `i -> 7 `i `Vuc ]
+"175
+[; ;display7.c: 175:             display_exibir_digito(primeira_decimal, 2);
+[e ( _display_exibir_digito (2 , _primeira_decimal -> -> 2 `i `uc ]
+"176
+[; ;display7.c: 176:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"178
+[; ;display7.c: 178:             display_exibir_digito(segunda_decimal, 3);
+[e ( _display_exibir_digito (2 , _segunda_decimal -> -> 3 `i `uc ]
+"179
+[; ;display7.c: 179:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"180
+[; ;display7.c: 180:         }
+}
+[e :U 112 ]
+"181
+[; ;display7.c: 181:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 50 `i 108  ]
+[e :U 109 ]
+}
+"184
+[; ;display7.c: 184:     display_limpar();
+[e ( _display_limpar ..  ]
+"185
+[; ;display7.c: 185: }
+[e :UE 106 ]
+}
