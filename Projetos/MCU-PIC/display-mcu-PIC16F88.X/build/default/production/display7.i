@@ -1758,6 +1758,7 @@ void display_inicializar(void) {
 
 
     display_limpar();
+
 }
 
 
@@ -1782,8 +1783,12 @@ void display_limpar(void) {
 
 void display_exibir_numero(int numero) {
 
+    display_limpar();
 
-    if(numero < 0 || numero > 999) return;
+
+    if(numero < 0 || numero > 999) {
+        return;
+    }
 
 
     uint8_t centenas = (numero / 100) % 10;
@@ -1805,32 +1810,33 @@ void display_exibir_numero(int numero) {
         _delay((unsigned long)((4)*(4000000/4000.0)));
     }
 }
-# 103 "display7.c"
+# 108 "display7.c"
 void display_exibir_digito(uint8_t digito, uint8_t posicao) {
 
-    if(digito > 9 || posicao < 1 || posicao > 3) return;
-
+    if(digito > 9 || posicao < 1 || posicao > 3) {
+        return;
+    }
 
     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6));
 
 
+    PORTB |= segmentos[digito];
+
+
     switch (posicao) {
         case 1:
-            PORTA |= ((1<<0));
             PORTA &= ~((1<<1) | (1<<2));
+            PORTA |= ((1<<0));
             break;
         case 2:
-            PORTA |= ((1<<1));
             PORTA &= ~((1<<0) | (1<<2));
+            PORTA |= ((1<<1));
             break;
         case 3:
-            PORTA |= ((1<<2));
             PORTA &= ~((1<<0) | (1<<1));
+            PORTA |= ((1<<2));
             break;
     }
-
-
-    PORTB |= segmentos[digito];
 }
 
 
@@ -1841,8 +1847,9 @@ void display_exibir_digito(uint8_t digito, uint8_t posicao) {
 
 void display_exibir_decimal(float numero) {
 
-    if (numero < 0.0 || numero >= 100.0) return;
-
+    if (numero < 0.0 || numero >= 100.0) {
+        return;
+    }
 
 
     uint8_t parte_inteira = (uint8_t)numero;

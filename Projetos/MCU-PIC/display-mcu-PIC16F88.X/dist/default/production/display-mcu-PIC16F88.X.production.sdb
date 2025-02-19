@@ -27,13 +27,13 @@
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "39 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\display7.c
 [v _display_inicializar display_inicializar `(v  1 e 1 0 ]
-"56
+"57
 [v _display_limpar display_limpar `(v  1 e 1 0 ]
-"70
+"71
 [v _display_exibir_numero display_exibir_numero `(v  1 e 1 0 ]
-"103
+"108
 [v _display_exibir_digito display_exibir_digito `(v  1 e 1 0 ]
-"136
+"142
 [v _display_exibir_decimal display_exibir_decimal `(v  1 e 1 0 ]
 "41 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\main.c
 [v _main main `(v  1 e 1 0 ]
@@ -57,58 +57,58 @@
 "39 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\display7.c
 [v _display_inicializar display_inicializar `(v  1 e 1 0 ]
 {
-"48
+"49
 } 0
-"70
+"71
 [v _display_exibir_numero display_exibir_numero `(v  1 e 1 0 ]
 {
-"81
+"86
 [v display_exibir_numero@i i `uc  1 a 1 7 ]
-"78
+"83
 [v display_exibir_numero@unidades unidades `uc  1 a 1 6 ]
-"77
+"82
 [v display_exibir_numero@dezenas dezenas `uc  1 a 1 5 ]
-"76
+"81
 [v display_exibir_numero@centenas centenas `uc  1 a 1 4 ]
-"70
+"71
 [v display_exibir_numero@numero numero `i  1 p 2 0 ]
-"94
+"99
 } 0
-"136
+"142
 [v _display_exibir_decimal display_exibir_decimal `(v  1 e 1 0 ]
 {
-"152
+"159
 [v display_exibir_decimal@i i `uc  1 a 1 9 ]
-"142
-[v display_exibir_decimal@parte_inteira parte_inteira `uc  1 a 1 10 ]
-"148
-[v display_exibir_decimal@primeira_decimal primeira_decimal `uc  1 a 1 8 ]
-"146
-[v display_exibir_decimal@unidades unidades `uc  1 a 1 7 ]
-"143
-[v display_exibir_decimal@casas_decimais casas_decimais `uc  1 a 1 6 ]
 "149
+[v display_exibir_decimal@parte_inteira parte_inteira `uc  1 a 1 10 ]
+"155
+[v display_exibir_decimal@primeira_decimal primeira_decimal `uc  1 a 1 8 ]
+"153
+[v display_exibir_decimal@unidades unidades `uc  1 a 1 7 ]
+"150
+[v display_exibir_decimal@casas_decimais casas_decimais `uc  1 a 1 6 ]
+"156
 [v display_exibir_decimal@segunda_decimal segunda_decimal `uc  1 a 1 5 ]
-"145
+"152
 [v display_exibir_decimal@dezenas dezenas `uc  1 a 1 4 ]
-"136
+"142
 [v display_exibir_decimal@numero numero `f  1 p 4 64 ]
-"185
+"192
 } 0
-"56
+"57
 [v _display_limpar display_limpar `(v  1 e 1 0 ]
 {
-"62
+"63
 } 0
-"103
+"108
 [v _display_exibir_digito display_exibir_digito `(v  1 e 1 0 ]
 {
 [v display_exibir_digito@digito digito `uc  1 p 1 wreg ]
 [v display_exibir_digito@digito digito `uc  1 p 1 wreg ]
 [v display_exibir_digito@posicao posicao `uc  1 p 1 0 ]
-"105
+"110
 [v display_exibir_digito@digito digito `uc  1 p 1 1 ]
-"128
+"134
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]

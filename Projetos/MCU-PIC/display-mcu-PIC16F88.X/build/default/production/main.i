@@ -1730,7 +1730,7 @@ void display_exibir_decimal(float numero);
 #pragma config FOSC = XT
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
-#pragma config MCLRE = OFF
+#pragma config MCLRE = ON
 #pragma config BOREN = OFF
 #pragma config LVP = OFF
 #pragma config CPD = OFF
@@ -1754,13 +1754,13 @@ void main(void) {
             _delay((unsigned long)((80)*(4000000/4000.0)));
         }
 
-        display_exibir_decimal(10.2);
+        display_exibir_decimal(12.2);
         _delay((unsigned long)((2000)*(4000000/4000.0)));
         display_exibir_decimal(1.21);
         _delay((unsigned long)((2000)*(4000000/4000.0)));
         display_exibir_decimal(0.22);
         _delay((unsigned long)((2000)*(4000000/4000.0)));
-        display_exibir_decimal(33.8);
+        display_exibir_decimal(34.8);
         _delay((unsigned long)((2000)*(4000000/4000.0)));
     }
 }

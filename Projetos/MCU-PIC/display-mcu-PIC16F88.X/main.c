@@ -39,7 +39,7 @@
  * 
  */ 
 void main(void) {
-    
+ 
     display_inicializar();
     
     while (1) {
@@ -49,13 +49,13 @@ void main(void) {
             __ms(80);
         }
         
-        display_exibir_decimal(10.2);
+        display_exibir_decimal(12.2);
         __ms(2000);
         display_exibir_decimal(1.21);
         __ms(2000);
         display_exibir_decimal(0.22);
         __ms(2000);
-        display_exibir_decimal(33.8);
+        display_exibir_decimal(34.8);
         __ms(2000);
     }
 }

@@ -212,52 +212,61 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47
 [; ;display7.c: 47:     display_limpar();
 [e ( _display_limpar ..  ]
-"48
-[; ;display7.c: 48: }
+"49
+[; ;display7.c: 49: }
 [e :UE 92 ]
 }
-"56
-[; ;display7.c: 56: void display_limpar(void) {
+"57
+[; ;display7.c: 57: void display_limpar(void) {
 [v _display_limpar `(v ~T0 @X0 1 ef ]
 {
 [e :U _display_limpar ]
 [f ]
-"58
-[; ;display7.c: 58:     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6) | (1<<7));
+"59
+[; ;display7.c: 59:     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6) | (1<<7));
 [e =& _PORTB -> ~ | | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i << -> 1 `i -> 7 `i `Vuc ]
-"61
-[; ;display7.c: 61:     PORTA &= ~((1<<0) | (1<<1) | (1<<2));
-[e =& _PORTA -> ~ | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `Vuc ]
 "62
-[; ;display7.c: 62: }
+[; ;display7.c: 62:     PORTA &= ~((1<<0) | (1<<1) | (1<<2));
+[e =& _PORTA -> ~ | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `Vuc ]
+"63
+[; ;display7.c: 63: }
 [e :UE 93 ]
 }
-"70
-[; ;display7.c: 70: void display_exibir_numero(int numero) {
+"71
+[; ;display7.c: 71: void display_exibir_numero(int numero) {
 [v _display_exibir_numero `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _display_exibir_numero ]
 [v _numero `i ~T0 @X0 1 r1 ]
 [f ]
 "73
-[; ;display7.c: 73:     if(numero < 0 || numero > 999) return;
-[e $ ! || < _numero -> 0 `i > _numero -> 999 `i 95  ]
-[e $UE 94  ]
-[e :U 95 ]
+[; ;display7.c: 73:     display_limpar();
+[e ( _display_limpar ..  ]
 "76
-[; ;display7.c: 76:     uint8_t centenas = (numero / 100) % 10;
+[; ;display7.c: 76:     if(numero < 0 || numero > 999) {
+[e $ ! || < _numero -> 0 `i > _numero -> 999 `i 95  ]
+{
+"77
+[; ;display7.c: 77:         return;
+[e $UE 94  ]
+"78
+[; ;display7.c: 78:     }
+}
+[e :U 95 ]
+"81
+[; ;display7.c: 81:     uint8_t centenas = (numero / 100) % 10;
 [v _centenas `uc ~T0 @X0 1 a ]
 [e = _centenas -> % / _numero -> 100 `i -> 10 `i `uc ]
-"77
-[; ;display7.c: 77:     uint8_t dezenas = (numero / 10) % 10;
+"82
+[; ;display7.c: 82:     uint8_t dezenas = (numero / 10) % 10;
 [v _dezenas `uc ~T0 @X0 1 a ]
 [e = _dezenas -> % / _numero -> 10 `i -> 10 `i `uc ]
-"78
-[; ;display7.c: 78:     uint8_t unidades = (numero / 1) % 10;
+"83
+[; ;display7.c: 83:     uint8_t unidades = (numero / 1) % 10;
 [v _unidades `uc ~T0 @X0 1 a ]
 [e = _unidades -> % / _numero -> 1 `i -> 10 `i `uc ]
-"81
-[; ;display7.c: 81:     for (uint8_t i = 0; i < 50; i++) {
+"86
+[; ;display7.c: 86:     for (uint8_t i = 0; i < 50; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -265,93 +274,102 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 97  ]
 [e :U 96 ]
 {
-"83
-[; ;display7.c: 83:         display_exibir_digito(centenas, 1);
-[e ( _display_exibir_digito (2 , _centenas -> -> 1 `i `uc ]
-"84
-[; ;display7.c: 84:         _delay((unsigned long)((4)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"87
-[; ;display7.c: 87:         display_exibir_digito(dezenas, 2);
-[e ( _display_exibir_digito (2 , _dezenas -> -> 2 `i `uc ]
 "88
-[; ;display7.c: 88:         _delay((unsigned long)((4)*(4000000/4000.0)));
+[; ;display7.c: 88:         display_exibir_digito(centenas, 1);
+[e ( _display_exibir_digito (2 , _centenas -> -> 1 `i `uc ]
+"89
+[; ;display7.c: 89:         _delay((unsigned long)((4)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"91
-[; ;display7.c: 91:         display_exibir_digito(unidades, 3);
-[e ( _display_exibir_digito (2 , _unidades -> -> 3 `i `uc ]
 "92
-[; ;display7.c: 92:         _delay((unsigned long)((4)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;display7.c: 92:         display_exibir_digito(dezenas, 2);
+[e ( _display_exibir_digito (2 , _dezenas -> -> 2 `i `uc ]
 "93
-[; ;display7.c: 93:     }
+[; ;display7.c: 93:         _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"96
+[; ;display7.c: 96:         display_exibir_digito(unidades, 3);
+[e ( _display_exibir_digito (2 , _unidades -> -> 3 `i `uc ]
+"97
+[; ;display7.c: 97:         _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"98
+[; ;display7.c: 98:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 50 `i 96  ]
 [e :U 97 ]
 }
-"94
-[; ;display7.c: 94: }
+"99
+[; ;display7.c: 99: }
 [e :UE 94 ]
 }
-"103
-[; ;display7.c: 103: void display_exibir_digito(uint8_t digito, uint8_t posicao) {
+"108
+[; ;display7.c: 108: void display_exibir_digito(uint8_t digito, uint8_t posicao) {
 [v _display_exibir_digito `(v ~T0 @X0 1 ef2`uc`uc ]
 {
 [e :U _display_exibir_digito ]
 [v _digito `uc ~T0 @X0 1 r1 ]
 [v _posicao `uc ~T0 @X0 1 r2 ]
 [f ]
-"105
-[; ;display7.c: 105:     if(digito > 9 || posicao < 1 || posicao > 3) return;
+"110
+[; ;display7.c: 110:     if(digito > 9 || posicao < 1 || posicao > 3) {
 [e $ ! || || > -> _digito `i -> 9 `i < -> _posicao `i -> 1 `i > -> _posicao `i -> 3 `i 100  ]
-[e $UE 99  ]
-[e :U 100 ]
-"108
-[; ;display7.c: 108:     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6));
-[e =& _PORTB -> ~ | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `Vuc ]
+{
 "111
-[; ;display7.c: 111:     switch (posicao) {
+[; ;display7.c: 111:         return;
+[e $UE 99  ]
+"112
+[; ;display7.c: 112:     }
+}
+[e :U 100 ]
+"114
+[; ;display7.c: 114:     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6));
+[e =& _PORTB -> ~ | | | | | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i << -> 1 `i -> 3 `i << -> 1 `i -> 4 `i << -> 1 `i -> 5 `i << -> 1 `i -> 6 `i `Vuc ]
+"117
+[; ;display7.c: 117:     PORTB |= segmentos[digito];
+[e =| _PORTB -> *U + &U _segmentos * -> _digito `ux -> -> # *U &U _segmentos `ui `ux `Vuc ]
+"120
+[; ;display7.c: 120:     switch (posicao) {
 [e $U 102  ]
 {
-"112
-[; ;display7.c: 112:         case 1:
-[e :U 103 ]
-"113
-[; ;display7.c: 113:             PORTA |= ((1<<0));
-[e =| _PORTA -> << -> 1 `i -> 0 `i `Vuc ]
-"114
-[; ;display7.c: 114:             PORTA &= ~((1<<1) | (1<<2));
-[e =& _PORTA -> ~ | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `Vuc ]
-"115
-[; ;display7.c: 115:             break;
-[e $U 101  ]
-"116
-[; ;display7.c: 116:         case 2:
-[e :U 104 ]
-"117
-[; ;display7.c: 117:             PORTA |= ((1<<1));
-[e =| _PORTA -> << -> 1 `i -> 1 `i `Vuc ]
-"118
-[; ;display7.c: 118:             PORTA &= ~((1<<0) | (1<<2));
-[e =& _PORTA -> ~ | << -> 1 `i -> 0 `i << -> 1 `i -> 2 `i `Vuc ]
-"119
-[; ;display7.c: 119:             break;
-[e $U 101  ]
-"120
-[; ;display7.c: 120:         case 3:
-[e :U 105 ]
 "121
-[; ;display7.c: 121:             PORTA |= ((1<<2));
-[e =| _PORTA -> << -> 1 `i -> 2 `i `Vuc ]
+[; ;display7.c: 121:         case 1:
+[e :U 103 ]
 "122
-[; ;display7.c: 122:             PORTA &= ~((1<<0) | (1<<1));
-[e =& _PORTA -> ~ | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i `Vuc ]
+[; ;display7.c: 122:             PORTA &= ~((1<<1) | (1<<2));
+[e =& _PORTA -> ~ | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `Vuc ]
 "123
-[; ;display7.c: 123:             break;
-[e $U 101  ]
+[; ;display7.c: 123:             PORTA |= ((1<<0));
+[e =| _PORTA -> << -> 1 `i -> 0 `i `Vuc ]
 "124
-[; ;display7.c: 124:     }
+[; ;display7.c: 124:             break;
+[e $U 101  ]
+"125
+[; ;display7.c: 125:         case 2:
+[e :U 104 ]
+"126
+[; ;display7.c: 126:             PORTA &= ~((1<<0) | (1<<2));
+[e =& _PORTA -> ~ | << -> 1 `i -> 0 `i << -> 1 `i -> 2 `i `Vuc ]
+"127
+[; ;display7.c: 127:             PORTA |= ((1<<1));
+[e =| _PORTA -> << -> 1 `i -> 1 `i `Vuc ]
+"128
+[; ;display7.c: 128:             break;
+[e $U 101  ]
+"129
+[; ;display7.c: 129:         case 3:
+[e :U 105 ]
+"130
+[; ;display7.c: 130:             PORTA &= ~((1<<0) | (1<<1));
+[e =& _PORTA -> ~ | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i `Vuc ]
+"131
+[; ;display7.c: 131:             PORTA |= ((1<<2));
+[e =| _PORTA -> << -> 1 `i -> 2 `i `Vuc ]
+"132
+[; ;display7.c: 132:             break;
+[e $U 101  ]
+"133
+[; ;display7.c: 133:     }
 }
 [e $U 101  ]
 [e :U 102 ]
@@ -360,51 +378,54 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 3 `i 105
  101 ]
 [e :U 101 ]
-"127
-[; ;display7.c: 127:     PORTB |= segmentos[digito];
-[e =| _PORTB -> *U + &U _segmentos * -> _digito `ux -> -> # *U &U _segmentos `ui `ux `Vuc ]
-"128
-[; ;display7.c: 128: }
+"134
+[; ;display7.c: 134: }
 [e :UE 99 ]
 }
-"136
-[; ;display7.c: 136: void display_exibir_decimal(float numero) {
+"142
+[; ;display7.c: 142: void display_exibir_decimal(float numero) {
 [v _display_exibir_decimal `(v ~T0 @X0 1 ef1`f ]
 {
 [e :U _display_exibir_decimal ]
 [v _numero `f ~T0 @X0 1 r1 ]
 [f ]
-"138
-[; ;display7.c: 138:     if (numero < 0.0 || numero >= 100.0) return;
+"144
+[; ;display7.c: 144:     if (numero < 0.0 || numero >= 100.0) {
 [e $ ! || < -> _numero `d .0.0 >= -> _numero `d .100.0 107  ]
+{
+"145
+[; ;display7.c: 145:         return;
 [e $UE 106  ]
+"146
+[; ;display7.c: 146:     }
+}
 [e :U 107 ]
-"142
-[; ;display7.c: 142:     uint8_t parte_inteira = (uint8_t)numero;
+"149
+[; ;display7.c: 149:     uint8_t parte_inteira = (uint8_t)numero;
 [v _parte_inteira `uc ~T0 @X0 1 a ]
 [e = _parte_inteira -> _numero `uc ]
-"143
-[; ;display7.c: 143:     uint8_t casas_decimais = (uint8_t)((numero - parte_inteira) * 100 + 0.5);
+"150
+[; ;display7.c: 150:     uint8_t casas_decimais = (uint8_t)((numero - parte_inteira) * 100 + 0.5);
 [v _casas_decimais `uc ~T0 @X0 1 a ]
 [e = _casas_decimais -> + -> * - _numero -> -> _parte_inteira `i `f -> -> 100 `i `f `d .0.5 `uc ]
-"145
-[; ;display7.c: 145:     uint8_t dezenas = (parte_inteira / 10) % 10;
+"152
+[; ;display7.c: 152:     uint8_t dezenas = (parte_inteira / 10) % 10;
 [v _dezenas `uc ~T0 @X0 1 a ]
 [e = _dezenas -> % / -> _parte_inteira `i -> 10 `i -> 10 `i `uc ]
-"146
-[; ;display7.c: 146:     uint8_t unidades = (parte_inteira % 10);
+"153
+[; ;display7.c: 153:     uint8_t unidades = (parte_inteira % 10);
 [v _unidades `uc ~T0 @X0 1 a ]
 [e = _unidades -> % -> _parte_inteira `i -> 10 `i `uc ]
-"148
-[; ;display7.c: 148:     uint8_t primeira_decimal = casas_decimais / 10;
+"155
+[; ;display7.c: 155:     uint8_t primeira_decimal = casas_decimais / 10;
 [v _primeira_decimal `uc ~T0 @X0 1 a ]
 [e = _primeira_decimal -> / -> _casas_decimais `i -> 10 `i `uc ]
-"149
-[; ;display7.c: 149:     uint8_t segunda_decimal = casas_decimais % 10;
+"156
+[; ;display7.c: 156:     uint8_t segunda_decimal = casas_decimais % 10;
 [v _segunda_decimal `uc ~T0 @X0 1 a ]
 [e = _segunda_decimal -> % -> _casas_decimais `i -> 10 `i `uc ]
-"152
-[; ;display7.c: 152:     for (uint8_t i = 0; i < 50; i++) {
+"159
+[; ;display7.c: 159:     for (uint8_t i = 0; i < 50; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -412,79 +433,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 109  ]
 [e :U 108 ]
 {
-"154
-[; ;display7.c: 154:         if (parte_inteira >= 10) {
+"161
+[; ;display7.c: 161:         if (parte_inteira >= 10) {
 [e $ ! >= -> _parte_inteira `i -> 10 `i 111  ]
 {
-"156
-[; ;display7.c: 156:             display_exibir_digito(dezenas, 1);
-[e ( _display_exibir_digito (2 , _dezenas -> -> 1 `i `uc ]
-"157
-[; ;display7.c: 157:             _delay((unsigned long)((4)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"159
-[; ;display7.c: 159:             display_exibir_digito(unidades, 2);
-[e ( _display_exibir_digito (2 , _unidades -> -> 2 `i `uc ]
-"160
-[; ;display7.c: 160:             PORTB |= (1<<7);
-[e =| _PORTB -> << -> 1 `i -> 7 `i `Vuc ]
-"161
-[; ;display7.c: 161:             _delay((unsigned long)((4)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "163
-[; ;display7.c: 163:             PORTB &= ~(1<<7);
-[e =& _PORTB -> ~ << -> 1 `i -> 7 `i `Vuc ]
-"165
-[; ;display7.c: 165:             display_exibir_digito(primeira_decimal, 3);
-[e ( _display_exibir_digito (2 , _primeira_decimal -> -> 3 `i `uc ]
-"166
-[; ;display7.c: 166:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[; ;display7.c: 163:             display_exibir_digito(dezenas, 1);
+[e ( _display_exibir_digito (2 , _dezenas -> -> 1 `i `uc ]
+"164
+[; ;display7.c: 164:             _delay((unsigned long)((4)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"166
+[; ;display7.c: 166:             display_exibir_digito(unidades, 2);
+[e ( _display_exibir_digito (2 , _unidades -> -> 2 `i `uc ]
+"167
+[; ;display7.c: 167:             PORTB |= (1<<7);
+[e =| _PORTB -> << -> 1 `i -> 7 `i `Vuc ]
 "168
-[; ;display7.c: 168:         } else {
+[; ;display7.c: 168:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"170
+[; ;display7.c: 170:             PORTB &= ~(1<<7);
+[e =& _PORTB -> ~ << -> 1 `i -> 7 `i `Vuc ]
+"172
+[; ;display7.c: 172:             display_exibir_digito(primeira_decimal, 3);
+[e ( _display_exibir_digito (2 , _primeira_decimal -> -> 3 `i `uc ]
+"173
+[; ;display7.c: 173:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"175
+[; ;display7.c: 175:         } else {
 }
 [e $U 112  ]
 [e :U 111 ]
 {
-"169
-[; ;display7.c: 169:             display_exibir_digito(unidades, 1);
-[e ( _display_exibir_digito (2 , _unidades -> -> 1 `i `uc ]
-"170
-[; ;display7.c: 170:             PORTB |= (1<<7);
-[e =| _PORTB -> << -> 1 `i -> 7 `i `Vuc ]
-"171
-[; ;display7.c: 171:             _delay((unsigned long)((4)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"173
-[; ;display7.c: 173:             PORTB &= ~(1<<7);
-[e =& _PORTB -> ~ << -> 1 `i -> 7 `i `Vuc ]
-"175
-[; ;display7.c: 175:             display_exibir_digito(primeira_decimal, 2);
-[e ( _display_exibir_digito (2 , _primeira_decimal -> -> 2 `i `uc ]
 "176
-[; ;display7.c: 176:             _delay((unsigned long)((4)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;display7.c: 176:             display_exibir_digito(unidades, 1);
+[e ( _display_exibir_digito (2 , _unidades -> -> 1 `i `uc ]
+"177
+[; ;display7.c: 177:             PORTB |= (1<<7);
+[e =| _PORTB -> << -> 1 `i -> 7 `i `Vuc ]
 "178
-[; ;display7.c: 178:             display_exibir_digito(segunda_decimal, 3);
-[e ( _display_exibir_digito (2 , _segunda_decimal -> -> 3 `i `uc ]
-"179
-[; ;display7.c: 179:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[; ;display7.c: 178:             _delay((unsigned long)((4)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "180
-[; ;display7.c: 180:         }
+[; ;display7.c: 180:             PORTB &= ~(1<<7);
+[e =& _PORTB -> ~ << -> 1 `i -> 7 `i `Vuc ]
+"182
+[; ;display7.c: 182:             display_exibir_digito(primeira_decimal, 2);
+[e ( _display_exibir_digito (2 , _primeira_decimal -> -> 2 `i `uc ]
+"183
+[; ;display7.c: 183:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"185
+[; ;display7.c: 185:             display_exibir_digito(segunda_decimal, 3);
+[e ( _display_exibir_digito (2 , _segunda_decimal -> -> 3 `i `uc ]
+"186
+[; ;display7.c: 186:             _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"187
+[; ;display7.c: 187:         }
 }
 [e :U 112 ]
-"181
-[; ;display7.c: 181:     }
+"188
+[; ;display7.c: 188:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 50 `i 108  ]
 [e :U 109 ]
 }
-"184
-[; ;display7.c: 184:     display_limpar();
+"191
+[; ;display7.c: 191:     display_limpar();
 [e ( _display_limpar ..  ]
-"185
-[; ;display7.c: 185: }
+"192
+[; ;display7.c: 192: }
 [e :UE 106 ]
 }

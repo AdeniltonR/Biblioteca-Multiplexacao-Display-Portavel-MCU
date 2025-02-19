@@ -45,6 +45,7 @@ void display_inicializar(void) {
 
     //---limpa o display inicialmente---
     display_limpar();
+    
 }
 
 // ========================================================================================================
@@ -68,10 +69,14 @@ void display_limpar(void) {
  * @param numero O numero inteiro a ser exibido
  */
 void display_exibir_numero(int numero) {
+    //---limpa o display antes de exibir o novo numero---
+    display_limpar();
     
     //---verifica se o numero esta dentro do intervalo permitido---
-    if(numero < 0 || numero > 999) return;                                     // Nao exibe numeros fora do intervalo
-
+    if(numero < 0 || numero > 999) {
+        return; //---nao exibe numeros fora do intervalo---
+    }
+    
     //---extrai os digitos das unidades, dezenas e centenas---
     uint8_t centenas = (numero / 100) % 10;                                    // Obtem o digito das centenas
     uint8_t dezenas  = (numero / 10) % 10;                                     // Obtem o digito das dezenas
@@ -102,24 +107,25 @@ void display_exibir_numero(int numero) {
  */
 void display_exibir_digito(uint8_t digito, uint8_t posicao) {
     //---verifica se o digito esta dentro do intervalo valido---
-    if(digito > 9 || posicao < 1 || posicao > 3) return;                       // Saia da funcao se os parametros estiverem fora dos limites
-    
+    if(digito > 9 || posicao < 1 || posicao > 3) {
+        return;                                                                // Saia da funcao se os parametros estiverem fora dos limites
+    }
     //---limpa os pinos do display---
     PORT_SEGMENTS &= ~(PIN_a | PIN_b | PIN_c | PIN_d | PIN_e | PIN_f | PIN_g); // Zera os segmentos
 
     //---ativa o digito correspondente---
     switch (posicao) {
         case 1:
-            PORT_DIGITS |=  (PIN_Q1);                                          // Ativa o primeiro digito
             PORT_DIGITS &= ~(PIN_Q2 | PIN_Q3);                                 // Desativa os outros
+            PORT_DIGITS |=  (PIN_Q1);                                          // Ativa o primeiro digito
             break;
         case 2:
-            PORT_DIGITS |=  (PIN_Q2);                                          // Ativa o segundo digito
             PORT_DIGITS &= ~(PIN_Q1 | PIN_Q3);                                 // Desativa os outros
+            PORT_DIGITS |=  (PIN_Q2);                                          // Ativa o segundo digito
             break;
         case 3:
-            PORT_DIGITS |=  (PIN_Q3);                                          // Ativa o terceiro digito
             PORT_DIGITS &= ~(PIN_Q1 | PIN_Q2);                                 // Desativa os outros
+            PORT_DIGITS |=  (PIN_Q3);                                          // Ativa o terceiro digito
             break;
     }
 
@@ -135,8 +141,9 @@ void display_exibir_digito(uint8_t digito, uint8_t posicao) {
  */
 void display_exibir_decimal(float numero) {
     //---limita o numero ao intervalo exibivel---
-    if (numero < 0.0 || numero >= 100.0) return;                               // Nao exibe numeros fora do intervalo (0.00 a 99.99)
-    
+    if (numero < 0.0 || numero >= 100.0) {
+        return;                                                                // Nao exibe numeros fora do intervalo (0.00 a 99.99)
+    }
 
     //---separa a parte inteira e as casas decimais---
     uint8_t parte_inteira =  (uint8_t)numero;                                  // Extrai a parte inteira
