@@ -93,7 +93,7 @@
 [v display_exibir_decimal@dezenas dezenas `uc  1 a 1 4 ]
 "142
 [v display_exibir_decimal@numero numero `f  1 p 4 64 ]
-"192
+"193
 } 0
 "57
 [v _display_limpar display_limpar `(v  1 e 1 0 ]

@@ -1799,15 +1799,15 @@ void display_exibir_numero(int numero) {
     for (uint8_t i = 0; i < 50; i++) {
 
         display_exibir_digito(centenas, 1);
-        _delay((unsigned long)((4)*(4000000/4000.0)));
+        _delay((unsigned long)((4)*(8000000/4000.0)));
 
 
         display_exibir_digito(dezenas, 2);
-        _delay((unsigned long)((4)*(4000000/4000.0)));
+        _delay((unsigned long)((4)*(8000000/4000.0)));
 
 
         display_exibir_digito(unidades, 3);
-        _delay((unsigned long)((4)*(4000000/4000.0)));
+        _delay((unsigned long)((4)*(8000000/4000.0)));
     }
 }
 # 108 "display7.c"
@@ -1818,9 +1818,6 @@ void display_exibir_digito(uint8_t digito, uint8_t posicao) {
     }
 
     PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6));
-
-
-    PORTB |= segmentos[digito];
 
 
     switch (posicao) {
@@ -1837,6 +1834,9 @@ void display_exibir_digito(uint8_t digito, uint8_t posicao) {
             PORTA |= ((1<<2));
             break;
     }
+
+
+    PORTB |= segmentos[digito];
 }
 
 
@@ -1867,29 +1867,30 @@ void display_exibir_decimal(float numero) {
         if (parte_inteira >= 10) {
 
             display_exibir_digito(dezenas, 1);
-            _delay((unsigned long)((4)*(4000000/4000.0)));
+            _delay((unsigned long)((4)*(8000000/4000.0)));
 
             display_exibir_digito(unidades, 2);
+            _delay((unsigned long)((3)*(8000000/4000.0)));
             PORTB |= (1<<7);
-            _delay((unsigned long)((4)*(4000000/4000.0)));
+            _delay((unsigned long)((2)*(8000000/4000.0)));
 
             PORTB &= ~(1<<7);
 
             display_exibir_digito(primeira_decimal, 3);
-            _delay((unsigned long)((4)*(4000000/4000.0)));
+            _delay((unsigned long)((4)*(8000000/4000.0)));
 
         } else {
             display_exibir_digito(unidades, 1);
             PORTB |= (1<<7);
-            _delay((unsigned long)((4)*(4000000/4000.0)));
+            _delay((unsigned long)((4)*(8000000/4000.0)));
 
             PORTB &= ~(1<<7);
 
             display_exibir_digito(primeira_decimal, 2);
-            _delay((unsigned long)((4)*(4000000/4000.0)));
+            _delay((unsigned long)((4)*(8000000/4000.0)));
 
             display_exibir_digito(segunda_decimal, 3);
-            _delay((unsigned long)((4)*(4000000/4000.0)));
+            _delay((unsigned long)((4)*(8000000/4000.0)));
         }
     }
 

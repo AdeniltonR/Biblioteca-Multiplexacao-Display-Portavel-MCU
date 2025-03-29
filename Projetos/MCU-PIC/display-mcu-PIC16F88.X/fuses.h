@@ -21,7 +21,7 @@
 // Declaracoes de configuracao no codigo C
 
 // CONFIG1
-#pragma config FOSC = XT        // Bits de selecao do oscilador (Oscilador EXTRC; funcao CLKO no pino RA6/OSC2/CLKO)
+#pragma config FOSC = HS        // Bits de selecao do oscilador (Oscilador EXTRC; funcao CLKO no pino RA6/OSC2/CLKO)
 #pragma config WDTE = OFF       // Bit de ativacao do Watchdog Timer (WDT ativado)
 #pragma config PWRTE = OFF      // Bit de ativacao do Power-up Timer (PWRT desativado)
 #pragma config MCLRE = ON       // Bit de selecao da funcao do pino RA5/MCLR/VPP (O pino RA5/MCLR/VPP funciona como MCLR)

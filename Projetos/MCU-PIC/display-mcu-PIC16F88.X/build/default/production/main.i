@@ -1727,7 +1727,7 @@ void display_exibir_decimal(float numero);
 
 # 1 "./fuses.h" 1
 # 24 "./fuses.h"
-#pragma config FOSC = XT
+#pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
 #pragma config MCLRE = ON
@@ -1748,19 +1748,19 @@ void main(void) {
     display_inicializar();
 
     while (1) {
-        for (uint8_t i = 0; i < 10; i++) {
+        for (uint8_t i = 0; i < 5; i++) {
 
             display_exibir_numero(i);
-            _delay((unsigned long)((80)*(4000000/4000.0)));
+            _delay((unsigned long)((80)*(8000000/4000.0)));
         }
 
         display_exibir_decimal(12.2);
-        _delay((unsigned long)((2000)*(4000000/4000.0)));
+        _delay((unsigned long)((2000)*(8000000/4000.0)));
         display_exibir_decimal(1.21);
-        _delay((unsigned long)((2000)*(4000000/4000.0)));
+        _delay((unsigned long)((2000)*(8000000/4000.0)));
         display_exibir_decimal(0.22);
-        _delay((unsigned long)((2000)*(4000000/4000.0)));
+        _delay((unsigned long)((2000)*(8000000/4000.0)));
         display_exibir_decimal(34.8);
-        _delay((unsigned long)((2000)*(4000000/4000.0)));
+        _delay((unsigned long)((2000)*(8000000/4000.0)));
     }
 }

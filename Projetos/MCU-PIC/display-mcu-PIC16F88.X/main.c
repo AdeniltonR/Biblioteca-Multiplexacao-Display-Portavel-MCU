@@ -16,7 +16,7 @@
 #include "fuses.h"
 
 //---defina a frequencia do oscilador---
-#define _XTAL_FREQ 4000000  
+#define _XTAL_FREQ 8000000  
 
 // ========================================================================================================
 //---BIBLIOTECAS AUXILIARES---
@@ -43,7 +43,7 @@ void main(void) {
     display_inicializar();
     
     while (1) {
-        for (uint8_t i = 0; i < 10; i++) {
+        for (uint8_t i = 0; i < 5; i++) {
             //---exibe o numero 123 no display---
             display_exibir_numero(i);
             __ms(80);

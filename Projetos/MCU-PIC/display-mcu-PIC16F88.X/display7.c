@@ -164,8 +164,9 @@ void display_exibir_decimal(float numero) {
             __ms(4);
 
             display_exibir_digito(unidades, 2);                                // Exibe as unidades na posicao 2 (Q2) com o ponto decimal ativado
+            __ms(3);
             PORT_SEGMENTS |= PIN_pt;                                           // Liga o ponto decimal no segundo digito (Q2)
-            __ms(4);
+            __ms(2);
 
             PORT_SEGMENTS &= ~PIN_pt;                                          // Desativa o ponto decimal antes de exibir o proximo digito
 
