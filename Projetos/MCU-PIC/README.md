@@ -147,13 +147,13 @@ Este documento visa fornecer orientações para a instalação dos softwares nec
 
 ### Instalação de Software
 
-[**`Para mais detalhes de instalação dos software;`**](https://github.com/AdeniltonR/Exemplos-de-firmware-para-PIC)
+💡 [**Para mais detalhes de instalação dos software;**](https://github.com/AdeniltonR/Exemplos-de-firmware-para-PIC)
 
-[**`Para mais detalhes de configuração do microcontrolador;`**](https://github.com/AdeniltonR/Exemplos-de-firmware-para-PIC/tree/main/Familia%20PIC/PIC18F47K40)
+💡 [**Para mais detalhes de configuração do microcontrolador;**](https://github.com/AdeniltonR/Exemplos-de-firmware-para-PIC/tree/main/Familia%20PIC/PIC18F47K40)
 
 ### Configuração de simulador
 
-💡 [Para baixar e instalar PICSimLab;](https://www.notion.so/Configura-o-de-Ambiente-ca71f333795e4a3690b7c21a5a820887?pvs=21)
+💡 [**Para baixar e instalar PICSimLab;**](https://github.com/AdeniltonR/Exemplos-de-firmware-para-PIC?tab=readme-ov-file#instala%C3%A7%C3%A3o-picsimlab)
 
 Inicie o software `PICSimLab` e, em seguida, clique em `Board` e selecione `Breadboard`:
 
