@@ -8,7 +8,6 @@
 
 - [Histórico de Versão](#histórico-de-versão)
 - [Boas Práticas para Commits](#boas-práticas-para-commits)
-- [Repositório](#repositório)
 - [Resumo](#resumo)
 - [Objetivo](#objetivo)
 - [Requisitos](#requisitos)
