@@ -43,6 +43,8 @@ O firmware controla um display de 7 segmentos com três dígitos, utilizando mul
 
 ## Fluxograma
 
+![Fluxograma.png](Docs/Fluxograma.png)
+
 ## PIC16F88
 
 O **PIC16F88** é um microcontrolador de 8 bits da família PIC da Microchip, conhecido por sua versatilidade, baixo consumo de energia e custo acessível. Ele oferece recursos como comparadores analógicos, conversor A/D, comunicação serial, e ampla capacidade de configuração dos pinos. É ideal para projetos embarcados de pequeno a médio porte, automação, sistemas de controle e aplicações didáticas.

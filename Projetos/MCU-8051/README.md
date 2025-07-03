@@ -46,6 +46,8 @@ O firmware controla um display de 7 segmentos com três dígitos, utilizando mul
 
 ## Fluxograma
 
+![Fluxograma.png](Docs/Fluxograma.png)
+
 ### Configuração do Gravador USBASP
 
 USBasp é um gravador para controladores Atmel AVR com uma conexão USB construída em sua placa. É constituído de um ATMega8 e outros simples componentes eletrônicos. O gravador apenas utiliza de um driver USB para comunicação, não sendo necessário um controlador USB especial.
