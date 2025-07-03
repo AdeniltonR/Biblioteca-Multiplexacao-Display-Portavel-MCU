@@ -1,6 +1,6 @@
 /*
  * NOME: Adenilton Ribeiro
- * DATA: 05/05/2025
+ * DATA: 02/07/2025
  * PROJETO: Display7.h
  * VERSAO: 1.0.0
  * DESCRICAO: - feat: Interface para display 7 segmentos
@@ -12,9 +12,9 @@
 /**
  * @brief display7.h
  * 
- */
+*/
 #ifndef  DISPLAY7_H
-#define DISPLAY7_H
+#define  DISPLAY7_H
 
 // ========================================================================================================
 // ---FREQUENCIA DO OSCILADOR---
@@ -45,8 +45,8 @@
 #define PIN_Q3 (1<<2) //RA2
 
 //---definir os pinos para controle do display. Essas definicoes podem ser ajustadas em cada microcontrolador.
-#define PORT_SEGMENTS   PORTB   // Porta para os segmentos (a, b, c, d, e, f, g, dp)
-#define PORT_DIGITS     PORTA   // Porta para os digitos (Q1, Q2, Q3)
+#define PORT_SEGMENTS   PORTB                  // Porta para os segmentos (a, b, c, d, e, f, g, dp)
+#define PORT_DIGITS     PORTA                  // Porta para os digitos (Q1, Q2, Q3)
 
 //---define os pinos como SAIDA ou ENTRADA---
 #define GPIOControlRegister_SEGMENTS   TRISB   // Registro TRISx para os segmentos como saida
@@ -57,9 +57,6 @@
 
 #define __ms(t) __delay_ms(t)
 #define __us(t) __delay_us(t)
-
-// ========================================================================================================
-//---CONSTANTS---
 
 // ========================================================================================================
 //---PROTOTIPO DA FUNCAO---

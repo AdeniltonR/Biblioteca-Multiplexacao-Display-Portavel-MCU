@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.50\pic\dat\20240725155939_en.msgs \
   -cn -h+dist/default/production\display-mcu-PIC16F88.X.production.sym \
   --cmf=dist/default/production\display-mcu-PIC16F88.X.production.cmf -z \
-  -Q16F88 -oC:\Users\adeni\AppData\Local\Temp\xcAs1uck.\driver_tmp_3.o \
+  -Q16F88 -oC:\Users\adeni\AppData\Local\Temp\xcAs1hfg.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/display-mcu-PIC16F88.X.production.map \
-  --md=C:\Users\adeni\AppData\Local\Temp\xcAs1uck.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\adeni\AppData\Local\Temp\xcAs1hfg.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh \
   -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 -AENTRY=00h-0FFhx16 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -22,7 +22,7 @@ Linker command line:
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,sivt,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -k \
-  C:\Users\adeni\AppData\Local\Temp\xcAs1uck.\driver_tmp_12.o \
+  C:\Users\adeni\AppData\Local\Temp\xcAs1hfg.\driver_tmp_12.o \
   dist/default/production\display-mcu-PIC16F88.X.production.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 16F88
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\adeni\AppData\Local\Temp\xcAs1uck.\driver_tmp_12.o
+C:\Users\adeni\AppData\Local\Temp\xcAs1hfg.\driver_tmp_12.o
                 end_init                              0        0        2        0       0
                 config                             2007     2007        2        0       4
 dist/default/production\display-mcu-PIC16F88.X.production.o
@@ -41,22 +41,22 @@ dist/default/production\display-mcu-PIC16F88.X.production.o
                 text14                              D3F      D3F       63     1A7E       0
                 text13                              CE8      CE8       57     19D0       0
                 text12                                F        F       A2       1E       0
-                text11                              C8B      C8B       27     1916       0
+                text11                              C8E      C8E       27     191C       0
                 text10                              4C1      4C1      330      982       0
                 text9                               271      271      250      4E2       0
-                text8                               C69      C69       22     18D2       0
+                text8                               C6C      C6C       22     18D8       0
                 text7                               DA2      DA2       76     1B44       0
                 text6                               F4C      F4C       B4     1E98       0
-                text5                               CB2      CB2       36     1964       0
-                text4                               C49      C49        6     1892       0
+                text5                               CB5      CB5       33     196A       0
+                text4                               C4C      C4C        6     1898       0
                 text3                                B1       B1      1C0      162       0
                 text2                               EAD      EAD       9F     1D5A       0
-                text1                               C4F      C4F        9     189E       0
+                text1                               C52      C52        9     18A4       0
                 maintext                            E18      E18       95     1C30       0
                 cstackBANK0                          20       20       4C       20       1
                 cstackCOMMON                         70       70        E       70       1
                 cstackBANK1                          A0       A0        B       A0       1
-                inittext                            C58      C58       11     18B0       0
+                inittext                            C5B      C5B       11     18B6       0
                 dataBANK1                            AB       AB        A       A0       1
                 idataBANK1                            5        5        A        A       0
 
@@ -67,19 +67,19 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text14                              D3F      D3F       63         0
                 text13                              CE8      CE8       57         0
                 text12                                F        F       A2         0
-                text11                              C8B      C8B       27         0
+                text11                              C8E      C8E       27         0
                 text10                              4C1      4C1      330         0
                 text9                               271      271      250         0
-                text8                               C69      C69       22         0
+                text8                               C6C      C6C       22         0
                 text7                               DA2      DA2       76         0
                 text6                               F4C      F4C       B4         0
-                text5                               CB2      CB2       36         0
-                text4                               C49      C49        6         0
+                text5                               CB5      CB5       33         0
+                text4                               C4C      C4C        6         0
                 text3                                B1       B1      1C0         0
                 text2                               EAD      EAD       9F         0
-                text1                               C4F      C4F        9         0
+                text1                               C52      C52        9         0
                 maintext                            E18      E18       95         0
-                inittext                            C58      C58       11         0
+                inittext                            C5B      C5B       11         0
                 idataBANK1                            5        5        A         0
 
         CLASS   STRCODE        
@@ -142,12 +142,12 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 text9                          000271  000250  0004C1       4E2       0  CODE        2
                 text10                         0004C1  000330  0007F1       982       0  CODE        2
                 cinit                          0007F1  00000F  000800       FE2       0  CODE        2
-                text4                          000C49  000006  000C4F      1892       0  CODE        2
-                text1                          000C4F  000009  000C58      189E       0  CODE        2
-                inittext                       000C58  000011  000C69      18B0       0  CODE        2
-                text8                          000C69  000022  000C8B      18D2       0  CODE        2
-                text11                         000C8B  000027  000CB2      1916       0  CODE        2
-                text5                          000CB2  000036  000CE8      1964       0  CODE        2
+                text4                          000C4C  000006  000C52      1898       0  CODE        2
+                text1                          000C52  000009  000C5B      18A4       0  CODE        2
+                inittext                       000C5B  000011  000C6C      18B6       0  CODE        2
+                text8                          000C6C  000022  000C8E      18D8       0  CODE        2
+                text11                         000C8E  000027  000CB5      191C       0  CODE        2
+                text5                          000CB5  000033  000CE8      196A       0  CODE        2
                 text13                         000CE8  000057  000D3F      19D0       0  CODE        2
                 text14                         000D3F  000063  000DA2      1A7E       0  CODE        2
                 text7                          000DA2  000076  000E18      1B44       0  CODE        2
@@ -164,12 +164,12 @@ UNUSED ADDRESS RANGES
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
         CODE             0002-0004              3           2
-                         0800-0C48            449
+                         0800-0C4B            44C
         CONST            0002-0004              3           2
-                         0800-0C48            100
+                         0800-0C4B            100
         EEDATA           2100-21FF            100           2
         ENTRY            0002-0004              3           2
-                         0800-0C48            100
+                         0800-0C4B            100
         IDLOC            2000-2003              4           2
         RAM              006C-006F              4           1
                          00B5-00EF             3B
@@ -180,9 +180,9 @@ UNUSED ADDRESS RANGES
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STRCODE          0002-0004              3           2
-                         0800-0C48            449
+                         0800-0C4B            44C
         STRING           0002-0004              3           2
-                         0800-0C48            100
+                         0800-0C4B            100
 
                                   Symbol Table
 
@@ -281,7 +281,7 @@ __Ltext                                 text         0000
 __S0                                    (abs)        1000
 __S1                                    (abs)        00B5
 __S3                                    (abs)        0000
-__Umul8_16                              text11       0C8B
+__Umul8_16                              text11       0C8E
 __Umul8_16@multiplicand                 cstackCOMMON 0070
 __Umul8_16@multiplier                   cstackCOMMON 0078
 __Umul8_16@product                      cstackCOMMON 0074
@@ -316,7 +316,7 @@ ___flmul@grs                            cstackBANK0  004A
 ___flmul@prod                           cstackBANK0  0050
 ___flmul@sign                           cstackBANK0  0049
 ___flmul@temp                           cstackBANK0  0054
-___flsub                                text8        0C69
+___flsub                                text8        0C6C
 ___flsub@a                              cstackBANK0  0034
 ___flsub@b                              cstackBANK0  0038
 ___fltol                                text7        0DA2
@@ -339,21 +339,21 @@ ___xxtofl@arg                           cstackCOMMON 007A
 ___xxtofl@exp                           cstackCOMMON 0079
 ___xxtofl@sign                          cstackCOMMON 0078
 ___xxtofl@val                           cstackCOMMON 0070
-__end_of__Umul8_16                      text11       0CB2
+__end_of__Umul8_16                      text11       0CB5
 __end_of___awdiv                        text14       0DA2
 __end_of___awmod                        text13       0D3F
 __end_of___fladd                        text9        04C1
 __end_of___flge                         text12       00B1
 __end_of___flmul                        text10       07F1
-__end_of___flsub                        text8        0C8B
+__end_of___flsub                        text8        0C8E
 __end_of___fltol                        text7        0E18
 __end_of___xxtofl                       text6        1000
 __end_of__initialization                cinit        07FD
 __end_of_display_exibir_decimal         text3        0271
 __end_of_display_exibir_digito          text5        0CE8
 __end_of_display_exibir_numero          text2        0F4C
-__end_of_display_inicializar            text1        0C58
-__end_of_display_limpar                 text4        0C4F
+__end_of_display_inicializar            text1        0C5B
+__end_of_display_limpar                 text4        0C52
 __end_of_main                           maintext     0EAD
 __initialization                        cinit        07F1
 __pcstackBANK0                          cstackBANK0  0020
@@ -362,26 +362,26 @@ __pcstackCOMMON                         cstackCOMMON 0070
 __pdataBANK1                            dataBANK1    00AB
 __pidataBANK1                           idataBANK1   0005
 __pmaintext                             maintext     0E18
-__ptext1                                text1        0C4F
+__ptext1                                text1        0C52
 __ptext10                               text10       04C1
-__ptext11                               text11       0C8B
+__ptext11                               text11       0C8E
 __ptext12                               text12       000F
 __ptext13                               text13       0CE8
 __ptext14                               text14       0D3F
 __ptext2                                text2        0EAD
 __ptext3                                text3        00B1
-__ptext4                                text4        0C49
-__ptext5                                text5        0CB2
+__ptext4                                text4        0C4C
+__ptext5                                text5        0CB5
 __ptext6                                text6        0F4C
 __ptext7                                text7        0DA2
-__ptext8                                text8        0C69
+__ptext8                                text8        0C6C
 __ptext9                                text9        0271
 _display_exibir_decimal                 text3        00B1
 _display_exibir_decimal$688             cstackBANK1  00A0
-_display_exibir_digito                  text5        0CB2
+_display_exibir_digito                  text5        0CB5
 _display_exibir_numero                  text2        0EAD
-_display_inicializar                    text1        0C4F
-_display_limpar                         text4        0C49
+_display_inicializar                    text1        0C52
+_display_limpar                         text4        0C4C
 _main                                   maintext     0E18
 _segmentos                              dataBANK1    00AB
 btemp                                   (abs)        007E
@@ -401,8 +401,8 @@ display_exibir_numero@i                 cstackBANK0  0027
 display_exibir_numero@numero            cstackBANK0  0020
 display_exibir_numero@unidades          cstackBANK0  0026
 end_of_initialization                   cinit        07FD
-init_fetch0                             inittext     0C58
-init_ram0                               inittext     0C5C
+init_fetch0                             inittext     0C5B
+init_ram0                               inittext     0C5F
 intlevel0                               functab      0000
 intlevel1                               functab      0000
 intlevel2                               functab      0000
@@ -435,21 +435,21 @@ C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c estimated size: 180
 
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
-		__Umul8_16     		CODE           	0C8B	0000	39
+		__Umul8_16     		CODE           	0C8E	0000	39
 
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c estimated size: 39
 
 display7.c
 		_display_exibir_numero		CODE           	0EAD	0000	159
-		_display_exibir_digito		CODE           	0CB2	0000	54
+		_display_exibir_digito		CODE           	0CB5	0000	51
 		_display_exibir_decimal		CODE           	00B1	0000	448
-		_display_limpar		CODE           	0C49	0000	6
-		_display_inicializar		CODE           	0C4F	0000	9
+		_display_limpar		CODE           	0C4C	0000	6
+		_display_inicializar		CODE           	0C52	0000	9
 
-display7.c estimated size: 676
+display7.c estimated size: 673
 
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
-		___flsub       		CODE           	0C69	0000	34
+		___flsub       		CODE           	0C6C	0000	34
 		___fladd       		CODE           	0271	0000	592
 
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c estimated size: 626

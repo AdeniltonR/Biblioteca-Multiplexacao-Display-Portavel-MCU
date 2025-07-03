@@ -21,7 +21,6 @@
     - [Desafios da Multiplexação](#desafios-da-multiplexação)
     - [Implementação no Projeto](#implementação-no-projeto)
 - [Informações Adicionais](#informações-adicionais)
-    - [Diagrama de Bloco](#diagrama-de-bloco)
     - [Firmware PIC](#firmware-pic)
     - [Firmware 8051](#firmware-8051)
     - [Firmware STM8](#firmware-stm8)
@@ -33,7 +32,7 @@
 
 | Versão | Data       | Autor       | Descrição         |
 |--------|------------|-------------|-------------------|
-| 1.0.0  | 30/10/2024 | Adenilton R | Início do Projeto |
+| 1.0.0  | 02/07/2025 | Adenilton R | Início do Projeto |
 
 ## Resumo
 
@@ -104,17 +103,11 @@ Neste projeto, a multiplexação será implementada em uma biblioteca em C que s
 
 ## Informações Adicionais
 
-### Diagrama de Bloco
-
-Este é o diagrama do projeto eletrônico, onde estarão contidos todos os circuitos necessários para o funcionamento adequado.
-
-`[Adicionar uma imagem]`
-
 ### Firmware PIC
 
 Para obter mais informações sobre o projeto do Firmware, clique no [**link**](https://github.com/AdeniltonR/Biblioteca-Multiplexacao-Display-Portavel-MCU/tree/main/Projetos/MCU-PIC) a seguir.
 
-`[Adicionar uma foto ou Gif]`
+![Pic_simlab_9.png](Docs/Pic_simlab_9.png)
 
 ### Firmware 8051
 

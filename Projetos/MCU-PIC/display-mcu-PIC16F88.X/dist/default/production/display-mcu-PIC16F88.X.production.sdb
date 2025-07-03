@@ -33,9 +33,9 @@
 [v _display_exibir_numero display_exibir_numero `(v  1 e 1 0 ]
 "108
 [v _display_exibir_digito display_exibir_digito `(v  1 e 1 0 ]
-"142
+"140
 [v _display_exibir_decimal display_exibir_decimal `(v  1 e 1 0 ]
-"41 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\main.c
+"26 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "166 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f88.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -47,12 +47,12 @@
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
 "20 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\display7.c
 [v _segmentos segmentos `[10]uc  1 e 10 0 ]
-"41 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\main.c
+"26 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"46
+"31
 [v main@i i `uc  1 a 1 75 ]
-"61
+"46
 } 0
 "39 G:\Meu Drive\Meus Projetos\GitHub\Meus-Projetos\Biblioteca-Multiplexacao-Display-Portavel-MCU\Projetos\MCU-PIC\display-mcu-PIC16F88.X\display7.c
 [v _display_inicializar display_inicializar `(v  1 e 1 0 ]
@@ -74,26 +74,26 @@
 [v display_exibir_numero@numero numero `i  1 p 2 0 ]
 "99
 } 0
-"142
+"140
 [v _display_exibir_decimal display_exibir_decimal `(v  1 e 1 0 ]
 {
-"159
+"157
 [v display_exibir_decimal@i i `uc  1 a 1 9 ]
-"149
+"147
 [v display_exibir_decimal@parte_inteira parte_inteira `uc  1 a 1 10 ]
-"155
-[v display_exibir_decimal@primeira_decimal primeira_decimal `uc  1 a 1 8 ]
 "153
+[v display_exibir_decimal@primeira_decimal primeira_decimal `uc  1 a 1 8 ]
+"151
 [v display_exibir_decimal@unidades unidades `uc  1 a 1 7 ]
-"150
+"148
 [v display_exibir_decimal@casas_decimais casas_decimais `uc  1 a 1 6 ]
-"156
+"154
 [v display_exibir_decimal@segunda_decimal segunda_decimal `uc  1 a 1 5 ]
-"152
+"150
 [v display_exibir_decimal@dezenas dezenas `uc  1 a 1 4 ]
-"142
+"140
 [v display_exibir_decimal@numero numero `f  1 p 4 64 ]
-"193
+"191
 } 0
 "57
 [v _display_limpar display_limpar `(v  1 e 1 0 ]
@@ -108,7 +108,7 @@
 [v display_exibir_digito@posicao posicao `uc  1 p 1 0 ]
 "110
 [v display_exibir_digito@digito digito `uc  1 p 1 1 ]
-"134
+"132
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]

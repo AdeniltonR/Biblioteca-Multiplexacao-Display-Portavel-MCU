@@ -61,10 +61,10 @@ __Umul8_16@multiplier 78 0 COMMON 1
 display_exibir_numero@centenas 24 0 BANK0 1
 __end_of___fltol E18 0 CODE 0
 ___stackhi 0 0 ABS 0
-__end_of___flsub C8B 0 CODE 0
+__end_of___flsub C8E 0 CODE 0
 __end_of___flge B1 0 CODE 0
 __end_of___awmod D3F 0 CODE 0
-init_fetch0 C58 0 CODE 0
+init_fetch0 C5B 0 CODE 0
 __Hcode 0 0 ABS 0
 __Lcode 0 0 ABS 0
 ___flge F 0 CODE 0
@@ -87,7 +87,7 @@ ___heap_lo 0 0 ABS 0
 ?___xxtofl 70 0 COMMON 1
 ___flmul@sign 49 0 BANK0 1
 end_of_initialization 7FD 0 CODE 0
-__Umul8_16 C8B 0 CODE 0
+__Umul8_16 C8E 0 CODE 0
 ___awdiv@sign 75 0 COMMON 1
 display_exibir_numero@numero 20 0 BANK0 1
 ___stacklo 0 0 ABS 0
@@ -98,7 +98,7 @@ __pdataBANK1 AB 0 BANK1 1
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
 ___fladd@grs 33 0 BANK0 1
-_display_inicializar C4F 0 CODE 0
+_display_inicializar C52 0 CODE 0
 __Hbank0 0 0 ABS 0
 __Lbank0 0 0 ABS 0
 __Hbank1 0 0 ABS 0
@@ -113,19 +113,19 @@ __Lpowerup 0 0 CODE 0
 _segmentos AB 0 BANK1 1
 __Umul8_16@multiplicand 70 0 COMMON 1
 ___flmul@grs 4A 0 BANK0 1
-__ptext1 C4F 0 CODE 0
+__ptext1 C52 0 CODE 0
 __ptext2 EAD 0 CODE 0
 __ptext3 B1 0 CODE 0
 ___stack_hi 0 0 STACK 2
-__ptext4 C49 0 CODE 0
-__ptext5 CB2 0 CODE 0
+__ptext4 C4C 0 CODE 0
+__ptext5 CB5 0 CODE 0
 __ptext6 F4C 0 CODE 0
-__end_of_display_limpar C4F 0 CODE 0
+__end_of_display_limpar C52 0 CODE 0
 __ptext7 DA2 0 CODE 0
 display_exibir_digito@digito 71 0 COMMON 1
 __HcstackBANK1 0 0 ABS 0
 __LcstackBANK1 0 0 ABS 0
-__ptext8 C69 0 CODE 0
+__ptext8 C6C 0 CODE 0
 __ptext9 271 0 CODE 0
 __pcstackBANK1 A0 0 BANK1 1
 __Hclrtext 0 0 ABS 0
@@ -133,7 +133,7 @@ __Lclrtext 0 0 ABS 0
 display_exibir_decimal@i A9 0 BANK1 1
 __end_of__initialization 7FD 0 CODE 0
 _display_exibir_numero EAD 0 CODE 0
-_display_exibir_digito CB2 0 CODE 0
+_display_exibir_digito CB5 0 CODE 0
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
 ___fladd 271 0 CODE 0
@@ -143,12 +143,12 @@ __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
 ___awmod CE8 0 CODE 0
 __Hspace_0 1000 0 ABS 0
-___flsub C69 0 CODE 0
+___flsub C6C 0 CODE 0
 __Lspace_0 0 0 ABS 0
 display_exibir_decimal@primeira_decimal A8 0 BANK1 1
 __Hspace_1 B5 0 ABS 0
 __Lspace_1 0 0 ABS 0
-__end_of_display_inicializar C58 0 CODE 0
+__end_of_display_inicializar C5B 0 CODE 0
 ___fltol DA2 0 CODE 0
 __Hspace_2 0 0 ABS 0
 __Lspace_2 0 0 ABS 0
@@ -169,7 +169,7 @@ ___flmul@temp 54 0 BANK0 1
 __end_of___fladd 4C1 0 CODE 0
 ___xxtofl@arg 7A 0 COMMON 1
 __ptext10 4C1 0 CODE 0
-__ptext11 C8B 0 CODE 0
+__ptext11 C8E 0 CODE 0
 __ptext12 F 0 CODE 0
 __ptext13 CE8 0 CODE 0
 __HidataBANK1 0 0 ABS 0
@@ -178,7 +178,7 @@ __ptext14 D3F 0 CODE 0
 __pidataBANK1 5 0 CODE 0
 ___awmod@divisor 78 0 COMMON 1
 ___fltol@sign1 5E 0 BANK0 1
-_display_limpar C49 0 CODE 0
+_display_limpar C4C 0 CODE 0
 __Umul8_16@word_mpld 76 0 COMMON 1
 __Hend_init 2 0 CODE 0
 __Lend_init 0 0 CODE 0
@@ -187,7 +187,7 @@ __Hreset_vec 0 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 ___xxtofl@exp 79 0 COMMON 1
 _display_exibir_decimal$688 A0 0 BANK1 1
-init_ram0 C5C 0 CODE 0
+init_ram0 C5F 0 CODE 0
 intlevel0 0 0 ENTRY 0
 intlevel1 0 0 ENTRY 0
 ___xxtofl@val 70 0 COMMON 1
@@ -195,7 +195,7 @@ intlevel2 0 0 ENTRY 0
 intlevel3 0 0 ENTRY 0
 intlevel4 0 0 ENTRY 0
 intlevel5 0 0 ENTRY 0
-__end_of__Umul8_16 CB2 0 CODE 0
+__end_of__Umul8_16 CB5 0 CODE 0
 ___fladd@aexp 31 0 BANK0 1
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
@@ -242,16 +242,16 @@ maintext 1C30 1D59 CODE 1C30 0
 text7 1B44 1C2F CODE 1B44 0
 text14 1A7E 1B43 CODE 1A7E 0
 text13 19D0 1A7D CODE 19D0 0
-text5 1964 19CF CODE 1964 0
-text11 1916 1963 CODE 1916 0
-text8 18D2 1915 CODE 18D2 0
-inittext 18B0 18D1 CODE 18B0 0
+text5 196A 19CF CODE 196A 0
+text11 191C 1969 CODE 191C 0
+text8 18D8 191B CODE 18D8 0
+inittext 18B6 18D7 CODE 18B6 0
 idataBANK1 A 1D CODE A 0
-text1 189E 18AF CODE 189E 0
-text4 1892 189D CODE 1892 0
+text1 18A4 18B5 CODE 18A4 0
+text4 1898 18A3 CODE 1898 0
 %locals
 dist/default/production\display-mcu-PIC16F88.X.production.o
-C:\Users\adeni\AppData\Local\Temp\xcAs1uck.\driver_tmp_1.s
+C:\Users\adeni\AppData\Local\Temp\xcAs1hfg.\driver_tmp_1.s
 476 7F1 0 CODE 0
 479 7F1 0 CODE 0
 520 7F1 0 CODE 0
@@ -267,45 +267,45 @@ C:\Users\adeni\AppData\Local\Temp\xcAs1uck.\driver_tmp_1.s
 535 7FD 0 CODE 0
 537 7FD 0 CODE 0
 538 7FE 0 CODE 0
-494 C58 0 CODE 0
-495 C58 0 CODE 0
-496 C59 0 CODE 0
-497 C5A 0 CODE 0
-498 C5B 0 CODE 0
-505 C5C 0 CODE 0
-506 C5C 0 CODE 0
-507 C5F 0 CODE 0
-508 C60 0 CODE 0
-509 C61 0 CODE 0
-510 C62 0 CODE 0
-511 C63 0 CODE 0
-512 C64 0 CODE 0
-513 C65 0 CODE 0
-514 C66 0 CODE 0
-515 C67 0 CODE 0
-516 C68 0 CODE 0
+494 C5B 0 CODE 0
+495 C5B 0 CODE 0
+496 C5C 0 CODE 0
+497 C5D 0 CODE 0
+498 C5E 0 CODE 0
+505 C5F 0 CODE 0
+506 C5F 0 CODE 0
+507 C62 0 CODE 0
+508 C63 0 CODE 0
+509 C64 0 CODE 0
+510 C65 0 CODE 0
+511 C66 0 CODE 0
+512 C67 0 CODE 0
+513 C68 0 CODE 0
+514 C69 0 CODE 0
+515 C6A 0 CODE 0
+516 C6B 0 CODE 0
 main.c
-41 E18 0 CODE 0
-43 E18 0 CODE 0
-46 E1B 0 CODE 0
-48 E1E 0 CODE 0
-49 E28 0 CODE 0
-50 E32 0 CODE 0
-50 E38 0 CODE 0
-52 E3C 0 CODE 0
-53 E47 0 CODE 0
-54 E56 0 CODE 0
-55 E63 0 CODE 0
-56 E72 0 CODE 0
-57 E7F 0 CODE 0
-58 E8E 0 CODE 0
-59 E9B 0 CODE 0
+26 E18 0 CODE 0
+28 E18 0 CODE 0
+31 E1B 0 CODE 0
+33 E1E 0 CODE 0
+34 E28 0 CODE 0
+35 E32 0 CODE 0
+35 E38 0 CODE 0
+37 E3C 0 CODE 0
+38 E47 0 CODE 0
+39 E56 0 CODE 0
+40 E63 0 CODE 0
+41 E72 0 CODE 0
+42 E7F 0 CODE 0
+43 E8E 0 CODE 0
+44 E9B 0 CODE 0
 display7.c
-39 C4F 0 CODE 0
-41 C4F 0 CODE 0
-44 C52 0 CODE 0
-47 C54 0 CODE 0
-49 C57 0 CODE 0
+39 C52 0 CODE 0
+41 C52 0 CODE 0
+44 C55 0 CODE 0
+47 C57 0 CODE 0
+49 C5A 0 CODE 0
 71 EAD 0 CODE 0
 73 EAD 0 CODE 0
 76 EB0 0 CODE 0
@@ -324,63 +324,64 @@ display7.c
 98 F41 0 CODE 0
 98 F47 0 CODE 0
 99 F4B 0 CODE 0
+140 B1 0 CODE 0
 142 B1 0 CODE 0
-144 B1 0 CODE 0
-149 E4 0 CODE 0
-150 F7 0 CODE 0
-152 184 0 CODE 0
-153 1A3 0 CODE 0
-155 1B7 0 CODE 0
-156 1CB 0 CODE 0
-159 1DF 0 CODE 0
-161 1E0 0 CODE 0
-161 1E2 0 CODE 0
-163 1E6 0 CODE 0
-164 1EC 0 CODE 0
-166 1F7 0 CODE 0
-167 1FF 0 CODE 0
-168 209 0 CODE 0
-169 20C 0 CODE 0
-171 217 0 CODE 0
-173 21B 0 CODE 0
-174 223 0 CODE 0
-176 22E 0 CODE 0
-177 22F 0 CODE 0
-178 235 0 CODE 0
-179 238 0 CODE 0
-181 243 0 CODE 0
-183 247 0 CODE 0
-184 24F 0 CODE 0
-186 25A 0 CODE 0
-189 263 0 CODE 0
-189 269 0 CODE 0
-192 26D 0 CODE 0
-193 270 0 CODE 0
-57 C49 0 CODE 0
-59 C49 0 CODE 0
-62 C4C 0 CODE 0
-63 C4E 0 CODE 0
-108 CB2 0 CODE 0
-110 CB3 0 CODE 0
-110 CB5 0 CODE 0
-110 CC0 0 CODE 0
-114 CC5 0 CODE 0
-117 CC9 0 CODE 0
-119 CCA 0 CODE 0
-120 CCC 0 CODE 0
-121 CCD 0 CODE 0
-123 CCE 0 CODE 0
-124 CD0 0 CODE 0
-125 CD1 0 CODE 0
-127 CD2 0 CODE 0
-128 CD4 0 CODE 0
-129 CD5 0 CODE 0
-130 CD6 0 CODE 0
-130 CD8 0 CODE 0
+147 E4 0 CODE 0
+148 F7 0 CODE 0
+150 184 0 CODE 0
+151 1A3 0 CODE 0
+153 1B7 0 CODE 0
+154 1CB 0 CODE 0
+157 1DF 0 CODE 0
+159 1E0 0 CODE 0
+159 1E2 0 CODE 0
+161 1E6 0 CODE 0
+162 1EC 0 CODE 0
+164 1F7 0 CODE 0
+165 1FF 0 CODE 0
+166 209 0 CODE 0
+167 20C 0 CODE 0
+169 217 0 CODE 0
+171 21B 0 CODE 0
+172 223 0 CODE 0
+174 22E 0 CODE 0
+175 22F 0 CODE 0
+176 235 0 CODE 0
+177 238 0 CODE 0
+179 243 0 CODE 0
+181 247 0 CODE 0
+182 24F 0 CODE 0
+184 25A 0 CODE 0
+187 263 0 CODE 0
+187 269 0 CODE 0
+190 26D 0 CODE 0
+191 270 0 CODE 0
+57 C4C 0 CODE 0
+59 C4C 0 CODE 0
+62 C4F 0 CODE 0
+63 C51 0 CODE 0
+108 CB5 0 CODE 0
+110 CB6 0 CODE 0
+110 CB8 0 CODE 0
+110 CC3 0 CODE 0
+114 CC8 0 CODE 0
+115 CCB 0 CODE 0
+118 CCC 0 CODE 0
+121 CD2 0 CODE 0
+122 CD3 0 CODE 0
+123 CD3 0 CODE 0
+124 CD5 0 CODE 0
+125 CD6 0 CODE 0
+126 CD6 0 CODE 0
+127 CD8 0 CODE 0
+128 CD9 0 CODE 0
+129 CD9 0 CODE 0
 130 CDB 0 CODE 0
-130 CDE 0 CODE 0
-133 CE1 0 CODE 0
-134 CE7 0 CODE 0
+131 CDC 0 CODE 0
+131 CDE 0 CODE 0
+131 CE1 0 CODE 0
+131 CE4 0 CODE 0
+132 CE7 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
 10 F4C 0 CODE 0
 15 F4D 0 CODE 0
@@ -457,10 +458,10 @@ C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
 68 E15 0 CODE 0
 70 E17 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
-242 C69 0 CODE 0
-248 C69 0 CODE 0
-249 C6D 0 CODE 0
-250 C8A 0 CODE 0
+242 C6C 0 CODE 0
+248 C6C 0 CODE 0
+249 C70 0 CODE 0
+250 C8D 0 CODE 0
 10 271 0 CODE 0
 21 271 0 CODE 0
 22 277 0 CODE 0
@@ -835,20 +836,20 @@ C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
 203 7E8 0 CODE 0
 205 7F0 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
-4 C8B 0 CODE 0
-5 C8C 0 CODE 0
-6 C8E 0 CODE 0
-51 C95 0 CODE 0
-52 C99 0 CODE 0
-52 C9B 0 CODE 0
-53 C9F 0 CODE 0
-54 C9F 0 CODE 0
-54 CA0 0 CODE 0
-54 CA4 0 CODE 0
-55 CA6 0 CODE 0
-56 CA8 0 CODE 0
-59 CAD 0 CODE 0
-60 CB1 0 CODE 0
+4 C8E 0 CODE 0
+5 C8F 0 CODE 0
+6 C91 0 CODE 0
+51 C98 0 CODE 0
+52 C9C 0 CODE 0
+52 C9E 0 CODE 0
+53 CA2 0 CODE 0
+54 CA2 0 CODE 0
+54 CA3 0 CODE 0
+54 CA7 0 CODE 0
+55 CA9 0 CODE 0
+56 CAB 0 CODE 0
+59 CB0 0 CODE 0
+60 CB4 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
 4 F 0 CODE 0
 7 F 0 CODE 0

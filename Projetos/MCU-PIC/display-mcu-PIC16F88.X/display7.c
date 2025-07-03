@@ -1,6 +1,6 @@
 /*
  * NOME: Adenilton Ribeiro
- * DATA: 05/02/2025
+ * DATA: 02/07/2025
  * PROJETO: Display7.c
  * VERSAO: 1.0.0
  * DESCRICAO: - feat: Configuracao da biblioteca para MCU.
@@ -35,7 +35,7 @@ uint8_t segmentos[10] = {
  * @brief Inicializa o display de 7 segmentos
  * 
  * @note Configura os pinos e prepara o display para operacao
- */
+*/
 void display_inicializar(void) {
     //---configura os pinos dos segmentos como saida---
     GPIOControlRegister_SEGMENTS &= ~(PIN_a | PIN_b | PIN_c | PIN_d | PIN_e | PIN_f | PIN_g | PIN_pt);
@@ -53,7 +53,7 @@ void display_inicializar(void) {
  * @brief Limpa todos os displays, apagando os segmentos
  * 
  * @note Remove qualquer dado exibido
- */
+*/
 void display_limpar(void) {
     //---desliga todos os segmentos (a, b, c, d, e, f, g, pt)---
     PORT_SEGMENTS &= ~(PIN_a | PIN_b | PIN_c | PIN_d | PIN_e | PIN_f | PIN_g | PIN_pt);
@@ -67,7 +67,7 @@ void display_limpar(void) {
  * @brief Exibe um numero inteiro no display de 7 segmentos
  * 
  * @param numero O numero inteiro a ser exibido
- */
+*/
 void display_exibir_numero(int numero) {
     //---limpa o display antes de exibir o novo numero---
     display_limpar();
@@ -104,33 +104,31 @@ void display_exibir_numero(int numero) {
  * 
  * @param digito O digito a ser exibido (0-9)
  * @param posicao A posicao do display (1, 2 ou 3)
- */
+*/
 void display_exibir_digito(uint8_t digito, uint8_t posicao) {
     //---verifica se o digito esta dentro do intervalo valido---
     if(digito > 9 || posicao < 1 || posicao > 3) {
         return;                                                                // Saia da funcao se os parametros estiverem fora dos limites
     }
     //---limpa os pinos do display---
-    PORT_SEGMENTS &= ~(PIN_a | PIN_b | PIN_c | PIN_d | PIN_e | PIN_f | PIN_g); // Zera os segmentos
+    PORT_SEGMENTS = 0x00;                                                      // Zera os segmentos
+    PORT_DIGITS = 0x00;                                                        // Zera os digitos
+    
+    //---atualiza os segmentos do display com o digito correspondente---
+    PORT_SEGMENTS = segmentos[digito];
 
     //---ativa o digito correspondente---
     switch (posicao) {
         case 1:
-            PORT_DIGITS &= ~(PIN_Q2 | PIN_Q3);                                 // Desativa os outros
-            PORT_DIGITS |=  (PIN_Q1);                                          // Ativa o primeiro digito
+            PORT_DIGITS = PIN_Q1;                                              // Ativa o primeiro digito
             break;
         case 2:
-            PORT_DIGITS &= ~(PIN_Q1 | PIN_Q3);                                 // Desativa os outros
-            PORT_DIGITS |=  (PIN_Q2);                                          // Ativa o segundo digito
+            PORT_DIGITS = PIN_Q2;                                              // Ativa o segundo digito
             break;
         case 3:
-            PORT_DIGITS &= ~(PIN_Q1 | PIN_Q2);                                 // Desativa os outros
-            PORT_DIGITS |=  (PIN_Q3);                                          // Ativa o terceiro digito
+            PORT_DIGITS = PIN_Q3;                                              // Ativa o terceiro digito
             break;
     }
-
-    //---atualiza os segmentos do display com o digito correspondente---
-    PORT_SEGMENTS |= segmentos[digito];
 }
 
 // ========================================================================================================
@@ -138,7 +136,7 @@ void display_exibir_digito(uint8_t digito, uint8_t posicao) {
  * @brief Exibe um numero decimal no display de 7 segmentos
  * 
  * @param numero O numero decimal a ser exibido (max. 2 inteiros e 1 decimal)
- */
+*/
 void display_exibir_decimal(float numero) {
     //---limita o numero ao intervalo exibivel---
     if (numero < 0.0 || numero >= 100.0) {

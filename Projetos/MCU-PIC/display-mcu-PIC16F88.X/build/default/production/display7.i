@@ -1817,26 +1817,24 @@ void display_exibir_digito(uint8_t digito, uint8_t posicao) {
         return;
     }
 
-    PORTB &= ~((1<<0) | (1<<1) | (1<<2) | (1<<3) | (1<<4) | (1<<5) | (1<<6));
+    PORTB = 0x00;
+    PORTA = 0x00;
+
+
+    PORTB = segmentos[digito];
 
 
     switch (posicao) {
         case 1:
-            PORTA &= ~((1<<1) | (1<<2));
-            PORTA |= ((1<<0));
+            PORTA = (1<<0);
             break;
         case 2:
-            PORTA &= ~((1<<0) | (1<<2));
-            PORTA |= ((1<<1));
+            PORTA = (1<<1);
             break;
         case 3:
-            PORTA &= ~((1<<0) | (1<<1));
-            PORTA |= ((1<<2));
+            PORTA = (1<<2);
             break;
     }
-
-
-    PORTB |= segmentos[digito];
 }
 
 

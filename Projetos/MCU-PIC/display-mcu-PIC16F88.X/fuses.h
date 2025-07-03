@@ -1,10 +1,10 @@
 /*
  * NOME: Adenilton Ribeiro
- * DATA: 05/02/2025
+ * DATA: 02/07/2025
  * PROJETO: Fuses.h
  * VERSAO: 1.0.0
- * DESCRICAO: - feat: Configurações de bits de configuração PIC1688
- *            - docs: MPLAB X IDE v6.20 - Compilador XC8 2.50
+ * DESCRICAO: - feat: Configuracoes de bits de configuracao PIC1688
+ *            - docs: MPLAB X IDE v6.20 - Compilador XC8 2.50 - PICSimLab Simulador 0.9.1 - PIC16F88
  * LINKS: - 
 */
 
@@ -12,7 +12,7 @@
 /**
  * @brief Fuses.h
  * 
- */ 
+*/ 
 #ifndef FUSES_H
 #define FUSES_H
 

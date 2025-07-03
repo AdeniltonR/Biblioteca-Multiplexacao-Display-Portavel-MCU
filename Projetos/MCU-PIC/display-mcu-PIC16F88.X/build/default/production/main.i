@@ -1742,7 +1742,7 @@ void display_exibir_decimal(float numero);
 #pragma config FCMEN = ON
 #pragma config IESO = ON
 # 16 "main.c" 2
-# 41 "main.c"
+# 26 "main.c"
 void main(void) {
 
     display_inicializar();
