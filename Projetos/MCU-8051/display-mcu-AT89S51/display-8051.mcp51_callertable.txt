@@ -1,0 +1,14 @@
+main
+	display_inicializar
+		display_limpar
+	display_exibir_decimal
+		Compare_Double
+		Double2Ints
+		Byte2Double
+			level2Double
+		Sub_32x32_FP
+			Add_32x32_FP
+		Mul_32x32_FP
+		Add_32x32_FP
+		display_exibir_digito
+		display_limpar
